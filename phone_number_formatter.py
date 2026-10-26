@@ -23,6 +23,7 @@ def digit_sum(num) :
     return d_sum
 
 def main() :
+    print("Type in 'q' to quit.")
     while True :
         phonenum = input("Phone number: ")
         if phonenum == "q" :
