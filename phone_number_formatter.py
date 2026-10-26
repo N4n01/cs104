@@ -28,10 +28,10 @@ def main() :
         if phonenum == "q" :
             break
         phonenum = clean_number(phonenum)
-        dSum = digit_sum(phonenum)
         if is_valid(phonenum) == None: 
             print("Invalid phone number.")
         else :
+            dSum = digit_sum(phonenum)
             phonenum = phonenum[:3] + "-" + phonenum[3:6] + "-" + phonenum[6:]
             print("Formatted: ", phonenum)
             print("Hidden: ", phonenum[:4] + "XXX" + phonenum[7:])
