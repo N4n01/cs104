@@ -4,13 +4,6 @@ def clean_number(text) :
     text = text.replace(".", "")
     return text
 
-    # try :
-    #     text = int(text)
-    # except ValueError :
-    #     return None
-    # text = str(text)
-    # return text
-
 def is_valid(number) :
     if len(number) != 10 or number[0] != "0" :
         return None
@@ -45,12 +38,5 @@ def main() :
             print("Hidden: ", hidden)
             print("Digit sum: ", dSum)
 
-
-
-
-            
-                # print("Formatted: ", phonenum)
-                # print("Hidden: ", hidden(phonenum))
-                # print("Digit sum: ", digit_sum(phonenum))
 
 main()
