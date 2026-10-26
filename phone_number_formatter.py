@@ -34,8 +34,7 @@ def main() :
         else :
             phonenum = phonenum[:3] + "-" + phonenum[3:6] + "-" + phonenum[6:]
             print("Formatted: ", phonenum)
-            hidden = phonenum[:4] + "XXX" + phonenum[7:]
-            print("Hidden: ", hidden)
+            print("Hidden: ", phonenum[:4] + "XXX" + phonenum[7:])
             print("Digit sum: ", dSum)
 
 
